@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work - Sharam Khan</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Aquí se llama el archivo CSS -->
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #000000;
+            color: #ffffff;
+            padding: 20px;
+            text-align: left;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            justify-content: flex-end;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #b0b0b0;
+            font-size: 1.1rem;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            color: #00bcd4;
+        }
+
+        .work-section {
+            padding: 40px 20px;
+            background-color: #1e1e1e;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .work-section h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.8rem;
+            color: #ffffff;
+        }
+
+        .work-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .work-card {
+            background-color: #333333;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            flex: 1 1 calc(33% - 30px);
+            min-width: 280px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+        }
+
+        .work-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            background-color: #444444;
+        }
+
+        .work-card h3 {
+            font-size: 2rem;
+            color: #ffffff;
+            margin-bottom: 15px;
+        }
+
+        .work-card p {
+            color: #b0b0b0;
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .work-image,
+        .implementation-image {
+            border-radius: 10px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .work-image {
+            width: 50%;
+        }
+
+        .implementation-image {
+            width: 50%;
+        }
+
+        .work-card:hover .work-image,
+        .work-card:hover .implementation-image {
+            transform: scale(1.05);
+        }
+
+        .project-button {
+            background-color: #333333;
+            color: #ffffff;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 1.1rem;
+            text-align: left;
+            transition: background-color 0.3s ease;
+        }
+
+        .project-button:hover {
+            background-color: #00bcd4;
+        }
+
+        .project-details {
+            margin-left: 20px;
+            display: none;
+        }
+
+        /* Estilos para el footer */
+        .footer {
+            background: #000;
+            padding: 30px 0px;
+            font-family: 'Play', sans-serif;
+            text-align: center;
+            color: gray;
+        }
+
+        .footer .row {
+            width: 100%;
+            margin: 1% 0%;
+            padding: 0.6% 0%;
+        }
+
+        .footer .row a {
+            text-decoration: none;
+            color: gray;
+            transition: 0.5s;
+        }
+
+        .footer .row a:hover {
+            color: #fff;
+        }
+
+        .footer .row ul {
+            width: 100%;
+        }
+
+        .footer .row ul li {
+            display: inline-block;
+            margin: 0px 30px;
+        }
+
+        .footer .row a i {
+            font-size: 2em;
+            margin: 0% 1%;
+        }
+
+        @media (max-width: 720px) {
+            .footer {
+                text-align: left;
+                padding: 5%;
+            }
+
+            .footer .row ul li {
+                display: block;
+                margin: 10px 0px;
+                text-align: left;
+            }
+
+            .footer .row a i {
+                margin: 0% 3%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content" style="display: flex; justify-content: space-between; align-items: center;">
+            <!-- Envolvemos el h1 dentro de un enlace -->
+            <h1 style="margin: 0; text-align: left;">
+                <a href="index.html" style="color: #fff; text-decoration: none;">HPS Industries</a>
+            </h1>
+            <nav>
+                <ul style="display: flex; list-style: none; margin-left: auto;">
+                    <li><a href="index.html" style="color: #fff;">Home</a></li>
+                    <li><a href="about.html" style="color: #fff;">About</a></li>
+                    <li><a href="education.html" style="color: #fff;">Education</a></li>
+                    <li><a href="work.html" style="color: #fff;">Work</a></li>
+                    <li><a href="contact.html" style="color: #fff;">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="work-section">
+
+        <div class="work-container">
+            <!-- Penetration Testing Project -->
+            <div class="work-card">
+                <h3>Penetration Testing</h3>
+                <p>This project <b>simulates</b> a <b>cyber attack</b> designed to <b>identify</b> vulnerabilities in
+                    systems and networks,
+                    with the goal of conducting a thorough analysis to discover security flaws that could be exploited
+                    by malicious attackers. Through various testing techniques and evaluation methods, weaknesses in
+                    configurations, communication protocols, and applications are examined, all with the intent of
+                    <b>preventing</b> potential <b>exploitation</b> and protecting an organization's digital assets from
+                    external
+                    threats. This approach not only enhances security but also strengthens the ability to respond to
+                    real-world attacks, ensuring a more secure and robust environment.
+                </p>
+            </div>
+
+            <!-- Intrusion Detection System Project -->
+            <div class="work-card">
+                <h3>Intrusion Detection System</h3>
+                <p>
+                    This project involves the <b>implementation</b> of an <b>Intrusion Detection System (IDS)</b>, which
+                    is designed
+                    to monitor network traffic and detect any <b>suspicious activities or potential threats</b> that
+                    could
+                    compromise the security of a network. By analyzing network patterns, identifying anomalies, and
+                    generating alerts in real-time, the IDS plays a critical role in enhancing the security posture of
+                    an organization. This system helps to promptly <b>identify</b> and respond to any <b>intrusions or
+                        attacks</b>,
+                    providing an additional layer of defense to prevent unauthorized access, data breaches, or other
+                    forms of cyber threats that could jeopardize the integrity of the network.</p>
+            </div>
+
+            <!-- Cybersecurity Projects Overview -->
+            <div class="work-card">
+                <h3>Cybersecurity Projects</h3>
+                <div class="project-sections">
+                    <button class="project-button" onclick="toggleDetails('project1')">Cloud Security Audit
+                        Projects</button>
+                    <div id="project1" class="project-details">
+                        <h4>1. Cloud Configuration Review</h4>
+                        <p>Auditing cloud configurations to ensure best practices are followed.</p>
+                        <h4>2. Data Encryption Assurance</h4>
+                        <p>Validating encryption protocols to protect sensitive data.</p>
+                    </div>
+
+                    <button class="project-button" onclick="toggleDetails('project2')">Network Penetration Testing
+                        Projects</button>
+                    <div id="project2" class="project-details">
+                        <h4>1. External Network Assessment</h4>
+                        <p>Identifying vulnerabilities in external network infrastructure.</p>
+                        <h4>2. Internal Network Hardening</h4>
+                        <p>Detecting and mitigating security flaws within the local network.</p>
+                    </div>
+
+                    <button class="project-button" onclick="toggleDetails('project3')">Application Security
+                        Projects</button>
+                    <div id="project3" class="project-details">
+                        <h4>1. Web Application Vulnerability Scan</h4>
+                        <p>Scanning web apps for common vulnerabilities like XSS and SQL injection.</p>
+                        <h4>2. Secure Code Review</h4>
+                        <p>Reviewing source code to identify security weaknesses.</p>
+                    </div>
+
+                    <button class="project-button" onclick="toggleDetails('project4')">Identity and Access Management
+                        (IAM) Projects</button>
+                    <div id="project4" class="project-details">
+                        <h4>1. Multi-Factor Authentication Implementation</h4>
+                        <p>Enhancing user authentication mechanisms with MFA solutions.</p>
+                        <h4>2. Role-Based Access Control Design</h4>
+                        <p>Ensuring proper user access control within systems.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div class="row">
+                <a href="https://web.telegram.org/"><i class="fa fa-telegram"></i></a>
+                <a href="https://www.instagram.com/itecbcn/"><i class="fa fa-instagram"></i></a>
+                <a href="https://github.com/https://github.com/"><i class="fa fa-github"></i></a>
+                <a href="https://twitter.com/itecbcn?lang=ca"><i class="fa fa-twitter"></i></a>
+            </div>
+
+            <div class="row">
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/education.html">Education</a></li>
+                    <li><a href="/work.html">Work</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="row">
+                INFERNO Copyright © 2024 Sharam Khan - All rights reserved
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleDetails(projectId) {
+            var details = document.getElementById(projectId);
+            details.style.display = details.style.display === "block" ? "none" : "block";
+        }
+    </script>
+</body>
+
+</html>

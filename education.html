@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education - Sharam Khan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
+
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            /* Dark background */
+            color: #e0e0e0;
+            /* Light text color */
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background-color: #000000;
+            /* Dark background for the header */
+            color: white;
+            padding: 10px;
+            text-align: left;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0 0 0 30px;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        /* Main Content */
+        .education-section {
+            padding: 40px 20px;
+            margin: 0;
+            background-color: #000000;
+            /* Dark background for sections */
+        }
+
+        .education-section h2 {
+            color: #ffffff;
+            /* White title */
+            font-size: 2rem;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .education-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .top-row {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .education-card {
+            background-color: #2c2c2c;
+            /* Dark background for cards */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            width: 48%;
+        }
+
+        .centered-card {
+            width: 100%;
+        }
+
+        .Ciberseguridad {
+            width: 100px;
+            height: auto;
+            padding: 20px;
+
+        }
+
+        .fotos {
+            display: flex;
+        }
+
+        .education-card img {
+            max-width: 30%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .education-card h3 {
+            margin-top: 0;
+            color: #e0e0e0;
+            /* Light color for titles */
+            font-size: 1.4rem;
+        }
+
+        /* Estilos para el footer */
+        .footer {
+            background: #000;
+            padding: 30px 0px;
+            font-family: 'Play', sans-serif;
+            text-align: center;
+            color: gray;
+        }
+
+        .footer .row {
+            width: 100%;
+            margin: 1% 0%;
+            padding: 0.6% 0%;
+        }
+
+        .footer .row a {
+            text-decoration: none;
+            color: gray;
+            transition: 0.5s;
+        }
+
+        .footer .row a:hover {
+            color: #fff;
+        }
+
+        .footer .row ul {
+            width: 100%;
+        }
+
+        .footer .row ul li {
+            display: inline-block;
+            margin: 0px 30px;
+        }
+
+        .footer .row a i {
+            font-size: 2em;
+            margin: 0% 1%;
+        }
+
+        @media (max-width: 720px) {
+            .footer {
+                text-align: left;
+                padding: 5%;
+            }
+
+            .footer .row ul li {
+                display: block;
+                margin: 10px 0px;
+                text-align: left;
+            }
+
+            .footer .row a i {
+                margin: 0% 3%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content" style="display: flex; justify-content: space-between; align-items: center;">
+            <!-- Envolvemos el h1 dentro de un enlace -->
+            <h1 style="margin: 0; text-align: left;">
+                <a href="index.html" style="color: #fff; text-decoration: none;">HPS Industries</a>
+            </h1>
+            <nav>
+                <ul style="display: flex; list-style: none; margin-left: auto;">
+                    <li><a href="index.html" style="color: #fff;">Home</a></li>
+                    <li><a href="about.html" style="color: #fff;">About</a></li>
+                    <li><a href="education.html" style="color: #fff;">Education</a></li>
+                    <li><a href="work.html" style="color: #fff;">Work</a></li>
+                    <li><a href="contact.html" style="color: #fff;">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="education-section">
+
+        <div class="education-container">
+            <div class="education-card centered-card">
+                <div class="fotos">
+                    <img src="/img_education/amazon.png" class="Ciberseguridad" alt="ITB Barcelona">
+                    <img src="/img_education/image.png" class="Ciberseguridad" alt="ITB Barcelona">
+                    <img src="/img_education/bash.png" class="Ciberseguridad" alt="ITB Barcelona">
+                    <img src="/img_education/packet_tracer.png" class="Ciberseguridad" alt="ITB Barcelona">
+                </div>
+                <h3>Advanced Degree in ASIX (Systems Integration in Networks) - ITB Barcelona</h3>
+                <p>I completed the "Advanced Degree" in ASIX (Systems Integration in Networks) at ITB
+                    Barcelona, specializing in Cybersecurity. This program provided me with an in-depth
+                    understanding of advanced IT systems, with a particular focus on securing systems against
+                    potential threats. During the course, I studied key topics such as network security, ethical
+                    hacking, cryptography, and the implementation of security protocols like firewalls and
+                    intrusion detection systems.
+                    <br><br>
+                    Through hands-on labs and real-world case studies, I developed strong skills in identifying
+                    vulnerabilities, preventing cyberattacks, and protecting sensitive data. This program
+                    prepared me to work as a cybersecurity professional, a critical role in the tech industry.
+                </p>
+            </div>
+
+            <!-- Intermediate Degree in SMX -->
+            <div class="education-card centered-card">
+                <div class="fotos2">
+                    <img src="/img_education2/html-5.png" class="Ciberseguridad" alt="ITB Barcelona">
+                    <img src="/img/ubuntu.png" class="Ciberseguridad" alt="ITB Barcelona">
+                    <img src="/img/windows-10.png" class="Ciberseguridad" alt="ITB Barcelona">
+                    <img src="/img_education2/MySQL-211.png" class="Ciberseguridad" alt="ITB Barcelona">
+                </div>
+                <h3>Intermediate Degree in SMX (Microcomputer Systems and Networks) - ITB Barcelona</h3>
+                <p>Before specializing in cybersecurity, I completed the "Intermediate Degree" in SMX
+                    (Microcomputer Systems and Networks) at ITB Barcelona. In this program, I gained a
+                    comprehensive understanding of various aspects of IT, including network management,
+                    hardware maintenance, and system configurations. Throughout the course, I learned how to
+                    manage and maintain different types of operating systems, configure networks, and
+                    troubleshoot common IT issues.
+                    <br><br>
+                    This training provided me with essential practical experience in setting up, maintaining, and
+                    troubleshooting computer networks, hardware components, and peripheral devices. These skills
+                    enabled me to take my first steps into the tech world, preparing me for technical roles in IT
+                    support and system management.
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div class="row">
+                <a href="https://web.telegram.org/"><i class="fa fa-telegram"></i></a>
+                <a href="https://www.instagram.com/itecbcn/"><i class="fa fa-instagram"></i></a>
+                <a href="https://github.com/https://github.com/"><i class="fa fa-github"></i></a>
+                <a href="https://twitter.com/itecbcn?lang=ca"><i class="fa fa-twitter"></i></a>
+            </div>
+
+            <div class="row">
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/education.html">Education</a></li>
+                    <li><a href="/work.html">Work</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="row">
+                INFERNO Copyright © 2024 Sharam Khan - All rights reserved
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Sharam Khan</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
+
+    <style>
+        /* Estilos globales */
+        body {
+            margin: 0;
+            overflow-x: hidden;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            transition: background-color 0.5s ease, color 0.5s ease;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        header h1 a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .home-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px;
+        }
+
+        .home-section h1 {
+            font-size: 4rem;
+            font-weight: bold;
+        }
+
+        .home-section .highlight {
+            color: #FFD700;
+        }
+
+        .home-section .logo-container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .home-section .logo-container a img {
+            width: 35px;
+            height: auto;
+            transition: transform 0.3s;
+        }
+
+        .home-section .logo-container a img:hover {
+            transform: scale(1.1);
+        }
+
+        .home-section .BotonCV {
+            background: linear-gradient(90deg, #ffd700, #f0e68c);
+            color: #fff;
+            font-size: 1.2rem;
+            font-weight: bold;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            text-decoration: none;
+        }
+
+        .home-section .BotonCV:hover {
+            background: linear-gradient(90deg, #f0e68c, #ffd700);
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .home-image img {
+            width: 500px;
+            height: auto;
+            transition: transform 0.5s;
+        }
+
+        .home-image img:hover {
+            transform: rotate(10deg) scale(1.05);
+        }
+
+        .theme-toggle {
+            cursor: pointer;
+            font-size: 1.5rem;
+            color: #ffd700;
+        }
+
+        /* Footer styles */
+        .footer {
+            background: #000;
+            padding: 30px 0px;
+            font-family: 'Play', sans-serif;
+            text-align: center;
+            color: gray;
+        }
+
+        .footer .row {
+            width: 100%;
+            margin: 1% 0%;
+            padding: 0.6% 0%;
+        }
+
+        .footer .row a {
+            text-decoration: none;
+            color: gray;
+            transition: 0.5s;
+        }
+
+        .footer .row a:hover {
+            color: #fff;
+        }
+
+        .footer .row ul {
+            width: 100%;
+        }
+
+        .footer .row ul li {
+            display: inline-block;
+            margin: 0px 30px;
+        }
+
+        .footer .row a i {
+            font-size: 2em;
+            margin: 0% 1%;
+        }
+
+        @media (max-width: 720px) {
+            .footer {
+                text-align: left;
+                padding: 5%;
+            }
+            .footer .row ul li {
+                display: block;
+                margin: 10px 0px;
+                text-align: left;
+            }
+            .footer .row a i {
+                margin: 0% 3%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-left" style="flex: 1;">
+            <h1>
+                <a href="index.html">HPS Industries</a>
+            </h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="work.html">Work</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="theme-toggle" onclick="toggleTheme()">
+            <i class="fa fa-sun-o"></i>
+        </div>
+    </header>
+
+    <section class="home-section">
+        <div class="home-content">
+            <h1 id="greeting"></h1>
+            <p style="font-size: 3rem;">Cybersecurity <span class="highlight">analyst</span></p>
+            <div class="logo-container">
+                <a href="https://www.cisco.com" target="_blank">
+                    <img src="/img/cisco-logo-white.png" alt="Cisco Logo">
+                </a>
+                <a href="https://ubuntu.com" target="_blank">
+                    <img src="/img/ubuntu.png" alt="Ubuntu Logo">
+                </a>
+                <a href="https://www.microsoft.com/windows" target="_blank">
+                    <img src="/img/windows-10.png" alt="Windows Logo">
+                </a>
+                <a href="https://learningnetwork.cisco.com/s/article/el-software-de-simulacion-cisco-packet-tracer" target="_blank">
+                    <img src="/img/cisco-packet-tracer.png" alt="Packet Tracer">
+                </a>
+            </div>
+            <br>
+            <a href="/Curriculum .pdf" download class="BotonCV">Download CV</a>
+        </div>
+        <div class="home-image">
+            <img src="/img/Tux.svg.png" alt="Tux">
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <div class="row">
+                <a href="https://web.telegram.org/"><i class="fa fa-telegram"></i></a>
+                <a href="https://www.instagram.com/itecbcn/"><i class="fa fa-instagram"></i></a>
+                <a href="https://github.com/"><i class="fa fa-github"></i></a>
+                <a href="https://twitter.com/itecbcn?lang=ca"><i class="fa fa-twitter"></i></a>
+            </div>
+            <div class="row">
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/education.html">Education</a></li>
+                    <li><a href="/work.html">Work</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="row">
+                INFERNO Copyright © 2024 Sharam Khan - All rights reserved
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Saludo dinámico
+        const greetingElement = document.getElementById('greeting');
+        const greetings = ["Hi there,", "Hola,", "Bonjour,", "Ciao,", "Hallo,"];
+        let index = 0;
+
+        function updateGreeting() {
+            greetingElement.innerHTML = `${greetings[index]} <br><span style="font-size: 6rem;">I'm <span class="highlight">Sharam Khan</span></span>`;
+            index = (index + 1) % greetings.length;
+        }
+
+        setInterval(updateGreeting, 3000); // Cambia el saludo cada 3 segundos
+        updateGreeting();
+
+        // Cambio de tema
+        function toggleTheme() {
+            document.body.classList.toggle('light-theme');
+            const icon = document.querySelector('.theme-toggle i');
+            icon.classList.toggle('fa-sun-o');
+            icon.classList.toggle('fa-moon-o');
+        }
+    </script>
+</body>
+</html>
